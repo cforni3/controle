@@ -37,7 +37,7 @@ def moyenne_tuples(notes,matiere,eleve):
       if n[1]==matiere:
         note_filtres.append(n[2])
   moy3 =sum(note_filtres)/len(note_filtres)
-  print(f"La moyenne de l'{eleve} en {matiere}est:",moy3)
+  print(f'La moyenne de l {eleve} en {matiere} est:{moy3}')
   return(moy3)
 
 moyenne_tuples(notes,"math","eleve1")
