@@ -42,5 +42,30 @@ def moyenne_tuples(notes,matiere,eleve):
 
 moyenne_tuples(notes,"math","eleve1")
 
+#5 
+class Note:
+  def __init__(self, eleve, matiere, valeur): #La méthode pour créer un objet
+    self.eleve = eleve
+    self.matiere = matiere
+    self.valeur = valeur
 
 
+  def afficher(self):
+    print('eleve', self.eleve, 'matiere', self.matiere, 'note', self.valeur)
+
+
+onote = Note('eleve1', 'maths', 13)
+print(onote.eleve)
+print(onote.matiere)
+print(onote.valeur)
+Note.afficher(onote)
+
+
+onotes2 = [Note(*note) for note in notes]
+
+#6 
+
+def __str__(self):
+    return f"{self.__class__.__name__}('{self.eleve}','{self.matiere}','{self.valeur}')"
+
+    
