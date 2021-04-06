@@ -29,7 +29,7 @@ for n in notes :
       moy2 =sum(note_eleve_maths)/len(note_eleve_maths)
 print("La moyenne de l'élève en maths est:",moy2)
 
-#4c
+#4c.  
 def moyenne_tuples(notes,matiere,eleve):
   note_filtres=[]
   for n in notes :
