@@ -52,6 +52,9 @@ class Note:
 
   def afficher(self):
     print('eleve', self.eleve, 'matiere', self.matiere, 'note', self.valeur)
+  
+  def __str__(self):
+    return f"{self.__class__.__name__}('{self.eleve}','{self.matiere}','{self.valeur}')"
 
 
 onote = Note('eleve1', 'maths', 13)
@@ -65,7 +68,5 @@ onotes2 = [Note(*note) for note in notes]
 
 #6 
 
-def __str__(self):
-    return f"{self.__class__.__name__}('{self.eleve}','{self.matiere}','{self.valeur}')"
 
     
